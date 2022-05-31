@@ -1,6 +1,6 @@
 import random
 from random import choice
-# t = ["Rock", "Paper", "Scissors"]
+
 rps = ["R", "P", "S"]
 
 def get_choice(choice):
