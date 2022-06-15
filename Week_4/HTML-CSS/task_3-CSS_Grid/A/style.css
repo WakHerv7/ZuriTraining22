@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:hsl(0, 0%, 95%);
+}
+
+/* Navigation Bar*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  nav{
+    position: relative;
+    width: 90%;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+    font-size: 50px;
+    color: #4E457A;
+    cursor: pointer;
+}
+nav ul {
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin: 00px 10px;
+}
+nav ul li.active{
+    color: #007bff;
+}
+nav ul li.active::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 20px;
+    background: #007bff;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #4E457A;
+}
+nav ul li a:hover{
+    color: #007bff;
+}
+/* End Of Navigation*/
+
+
+
+.main_container {
+    position: relative;
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;            
+    grid-gap: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+
+.main_container > div{
+    position: relative;
+    width: 175px;
+    height: 380px;
+    padding: 40px;           
+}
+.left_card {
+    background: hsl(31, 77%, 52%);
+}
+.middle_card {
+    background: hsl(184, 100%, 22%);
+}
+.right_card {
+    background: hsl(179, 100%, 13%);
+}
+
+.main_container > div > h3{
+    font-family: 'Big Shoulders Display';  
+    font-weight: 700;
+    color: hsl(0, 0%, 95%); 
+    font-size: 30px;        
+}
+.main_container > div > p,
+.main_container > div > a{
+    font-family: 'Lexend Deca';  
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);   
+    font-size: 15px;     
+}
+.main_container > div > p {
+    margin-bottom: 80px;
+}
+.main_container > div > a{
+    border-radius: 35px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background:hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);                  
+}
+.main_container > .left_card > a{
+    color: hsl(31, 77%, 52%); 
+}
+.main_container > .middle_card > a{
+    color: hsl(184, 100%, 22%); 
+}
+.main_container > .right_card > a{
+    color: hsl(179, 100%, 13%); 
+}
+
+.main_container > div > a:active{            
+    background: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);       
+}
+
+@media (max-width: 375px) {
+    body {
+        align-items: unset;
+        height: unset;
+    }
+    nav ul li.active{
+        display: none;
+    }
+    .main_container {
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-gap: 15px; 
+        grid-template-columns: unset;
+        overflow: unset;
+        border-radius: unset;
+        height: unset;
+        min-height: 420px;
+        padding: 50px 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    body {
+        align-items: center;
+        
+    }
+    .main_container {
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 15px; 
+        overflow: hidden;
+        border-radius: 10px;
+        height: fit-content;
+        padding: 50px 0;
+    }
+
+}
+        

@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chessboard {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border: 25px solid #333;
+}
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(68, 14, 14);
+      font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+    color: lightgoldenrodyellow;
+}
+.white {
+    color: lightgoldenrodyellow;
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 230, 148);
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;

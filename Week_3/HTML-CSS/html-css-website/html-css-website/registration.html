@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+    <nav>
+        <i class="logo">&#9822;</i>
+        <ul>
+            <li>
+            <a href="index.html">Home</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="registration.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>            
+    </nav>
+    </header>
+    <main>
+        <section class="registration">
+            <h1 class="title"> REGISTRATION </h1>
+            <form action="">    
+                <div class="inputBox">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>   
+                <div class="inputBox2">
+                    <input type="email" placeholder="Your email" required>     
+                </div> 
+                
+                <div class="inputBox">                    
+                    <input type="phone" placeholder="Your phone number" required>                    
+                    <select class="" required>
+                        <option>Gender...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" placeholder="Country" required>
+                    <input type="text" placeholder="State/province" required>
+                </div>
+
+                <div class="inputBox2">
+                    <input type="password" placeholder="Password" required>                    
+                </div>  
+                <div class="inputBox2">                    
+                    <input type="password" placeholder="Confirm password" required>
+                </div>       
+                
+                <input type="submit" value="Register" class="btn">
+        
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
